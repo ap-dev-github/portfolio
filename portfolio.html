@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script >
     var i=0;
-        var txt= "I am Ayush Pandey and I am a budding Software developer.";
+    var txt= "MERN Stack Developer, Problem Solver";
         var speed=50;
         function typeWriter(){
             if(i<txt.length){
@@ -26,72 +27,215 @@
     <!--The main body starts from here-->
 <body onload="typeWriter()" background="./images/background.png">
 
-    <div class="outer-div">
-        <div class="home">
-        <nav>
+       
         <section class="navigation">
-            <a class="nav-a" href="">Home</a>
-            <a class="nav-a" href="/signup page/signup.html">Projects</a>
-            <a class="nav-a" href="">Certifications</a>
-            <a class="nav-a" href="">Achievements</a>
-            <a class="nav-a" href="">Recommandations</a>
+            <a class="nav-a" href="#home">Home</a>
+            <a class="nav-a" href="#projects">Projects</a>
+            <a class="nav-a" href="#certification">Certifications</a>
+            <a class="nav-a" href="#achievement">Achievements</a>
             </section>
-            </nav>
-        </div>
+       
+   
 
-
-     <main class="main-content">
         <div class="main-content-div">
             <section class="profile-image">
                 <img src="images/profilepic.jpg" alt="photo">
 
                 <!-- linkedin badge code -->
                 <div id="linkedin">
-                <span><div class="badge-base LI-profile-badge" data-locale="en_US"
+              <div class="badge-base LI-profile-badge" data-locale="en_US"
                      data-size="medium" data-theme="light" data-type="VERTICAL"
                       data-vanity="linkedap" data-version="v1">
                       <a class="badge-base__link LI-simple-link" 
                       href="https://in.linkedin.com/in/linkedap?trk=profile-badge"></a>
-                    </div></span>
+                    </div>
                     </div>
             </section>
             <section class="introduction" >
-                <h1 id="typewriter">Hello There!</h1>
+                <h1 id="typewriter">Ayush Pandey</h1>
                 <p id="intro-text"></p>
                 <section class="skills">
-                    <fieldset>
-                        <legend id="skill-legend">Skills</legend>
+                        <p class="sub-heading-skill">Frontend Development</p>
                        <div class="skill-div">
-                            <div class="skill"><img src="images/html5.png" alt="htmllogo"> <p class="skill-name">HTML</p><p class="experiance">2 year of experiance </p></div>
-                            <div class="skill"><img src="images/CSS3.png" alt="csslogo"> <p class="skill-name">CSS</p><p class="experiance">2 year of experiance</p></div>
-                            <div class="skill"><img src="images/js.png" alt="jslogo"> <p class="skill-name">JAVASCRIPT</p><p class="experiance">2 year of experiance</p></div>
-                            <div class="skill"><img src="images/java.png" alt="javalogo"><p class="skill-name">JAVA</p><p class="experiance">2 year of experiance</p></div>
-                            <div class="skill"><img src="images/python.png" alt="pythonlogo"> <p class="skill-name">PYTHON</p><p class="experiance">2 year of experiance</p></div>
-
+                            <div class="inner-box"><img src="images/html5.png" alt="htmllogo"> </div>
+                            <div class="inner-box"><img src="images/CSS3.png" alt="csslogo"></div>
+                            <div class="inner-box"><img src="images/js.png" alt="jslogo"> </div>
+                            <div class="inner-box"><img src="images/java.png" alt="javalogo"></div>
+                            <div class="inner-box"><img src="images/react.png" alt="pythonlogo"> </div>
+                        </div>
+                        <p class="sub-heading-skill">Backend Frameworks and Technologies</p>
+                        <div class="skill-div">
+                            <div class="inner-box"><img src="images/express.png" alt="htmllogo"> </div>
+                            <div class="inner-box"><img src="images/flask.png" alt="htmllogo"> </div>
+                            <div class="inner-box"><img src="images/django.png" alt="htmllogo"> </div>
+                            </div>
+                            <p class="sub-heading-skill">Database</p>
+                        <div class="skill-div">
+                            <div class="inner-box"><img src="images/mongo.png" alt="htmllogo"> </div>
+                            <div class="inner-box"><img src="images/postgre.png" alt="htmllogo"> </div>
+                            </div>
+                            <p class="sub-heading-skill">Deployment</p>  
+                        <div class="skill-div">
+                            <div class="inner-box"><img src="images/docker.png" alt="htmllogo"> </div>
+                            <div class="inner-box"><img src="images/knates.png" alt="htmllogo"> </div>
+                            </div>
+                            
                         </section>
-                    </fieldset>
+                   
+
                 </section>
             </section>
-
+          
         </div>
-     </main>
 
-    <div class="education">
-        <div class="undergrad">
-            <h1 class="education-title">Education</h1>
-        <p class="degree-title">Bachelor of Technology</p>
-        <p class="branch">Computer Science and Engineering  </p>  
-        <!-- <p> CGPA: 8.6</p> -->
-        <img class="college-logo" src="images/vitaplogo.PNG" alt="VitAmrawati.png">
-    </div>
+        <!-- The projects section starts here  -->
+        <section class="projects" id="projects">
+            <p class="subheading">Projects</p>
+                <div class="skill-div">
+                    <div class="inner-box project-box" style="width: 80vw;height: fit-content;"><p class="project-name">Company's Budget Allocation</p>
+                        <p class="description">This ReactJS and Redux-based application provides real-time updates across the webpage when state changes, enabling startups to efficiently allocate and manage funds between different departments.
+                        </p>
+                        <p class="buttons-para"><a href="https://github.com/ap-dev-github/project-budget-allocation" class="btn btn-primary">Repository</a>
+                            <a href="https://ap-dev-github.github.io/project-budget-allocation/" class="btn btn-success">Visit Website</a></p>    
+                    </div>
+                    
+                </div>
+                    <div class="inner-box project-box" style="width: 80vw;height: fit-content;"><p class="project-name">Atithidev Couch Surfing Community Website</p> 
+                    <p class="description">The Return Journey is a microservice-based platform designed to connect travelers with hosts. <br>
+                        It features an emotion detection microservice for analyzing reviews and an Express API for CRUD operations on MongoDB.<br> 
+                        The frontend is built using React, offering components for login, registration, and hosting functionalities. <br>
+                        The backend leverages Django for scalability, security, and a built-in admin UI. Docker is used for creating images and containerizing services, ensuring a reliable and efficient deployment process.<br></p>
+                        <p class="buttons-para"><a href="https://github.com/ap-dev-github/atithidev-website" class="btn btn-primary">Repository</a>
+                            <a href="https://drive.google.com/file/d/1tV4RXWq1vB-LDEfhvuUeOWHmCJS06uJ8/view" class="btn btn-secondary">Solution Architecture</a>
+                            <a href="https://atithidev-main-v1-0-0.onrender.com/" class="btn btn-success">Visit Website</a></p>  
+                    </div>
+                    
+                </div>
+               
+                <div class="skill-div">
+                    <div class="inner-box project-box" style="width: 80vw;height: fit-content;"><p class="project-name">Customer Emotion Detection using IBM Watson.
+                        <p class="description">IBM Watson Integration: Utilized IBM Watson NLP to analyze user text and extract emotion data.
+                            Unit Testing: Applied the unittest framework for thorough testing of functions across diverse scenarios.
+                            Code Quality: Adhered to PEP 8 standards and achieved a perfect 10/10 score in static code analysis with pylint.
+                            
+                            </p>
+                            <p class="buttons-para"><a href="https://github.com/ap-dev-github/emotion-detection-ibm-watson" class="btn btn-primary">Repository</a> 
+                    </div>  
+                   
+                          
+                </div>
+                   
+            </section>
 
-    <div id="shapes">
-        <div class="circle1"></div>
-        <div class="circle2"></div>
-        <div class="square1"></div>
-        <div class="square2"></div>
-    </div>
-    </div>
+
+            <!-- the certification section starts here-- -->
+            <section class="certification" id="certification">
+                <p class="subheading">Certifications</p>
+                   <div class="skill-div">
+                  
+                        <div class="inner-box project-box" style="width: 60vw;height: fit-content;">
+                            <p class="project-name">IBM Full Stack Software Developer Certification</p>
+                            <p class="description">
+                                <b>Issued:</b> Mar 2024<br>
+                                <b>Credential ID:</b> ASWN32VZ2EUU<br>
+                                <b>Skills:</b> React.js · Express.js · API Testing · RESTful API · GitHub · HTML5 · Cascading Style Sheets (CSS) · JavaScript · Python (Programming Language) · Flask · Django · Node.js · Redux · Cloud Computing · DevOps<br>
+                            </p>
+                            <p class="buttons-para"><a href="https://www.credly.com/badges/48b870e4-7d95-46e1-8d40-3ea132c25ba9" class="btn btn-primary">Credly</a>
+                                <a href="https://www.coursera.org/account/accomplishments/professional-cert/ASWN32VZ2EUU" class="btn btn-success">View Certification</a></p>    
+                        </div>
+                       
+                    </div>
+                    <div class="skill-div">
+                        <div class="inner-box project-box" style="width: 60vw;height: fit-content;">
+                            <p class="project-name">CISCO-Networking Essentials</p> 
+                        <p class="description">
+                          <b>Issued:</b> Apr 2024<br>
+                            <b>Skills:</b> ·Computer Networking<br></p>
+                            <a href="https://drive.google.com/file/d/1VKznuMxsy_IqtBD0LcY5ysGZC-FUGd1J/view" class="btn btn-success">View and Verify</a>
+                        </div>
+                        
+                    </div>
+                   
+                    <div class="skill-div">
+                        <div class="inner-box project-box" style="width: 60vw;height: fit-content;">
+                            <p class="project-name">C for Everyone: Programming Fundamentals</p> 
+                            <p class="description">
+                                <b> C for Everyone: Programming Fundamentals</b><br>
+                                <b>Issued:</b> Mar 2022<br>
+                                <b>Credential ID:</b> W69C4H82Z9JR<br>
+                                <b>Skills:</b> ·Programming Fundamentals<br>
+                            </p>
+                            <p class="buttons-para"><a href="https://www.coursera.org/account/accomplishments/certificate/W69C4H82Z9JR" class="btn btn-success">View and Verify</a>
+                        </div>  
+                   
+                              
+                    </div>
+
+                    <div class="skill-div">
+                        <div class="inner-box project-box" style="width: 60vw;height: fit-content;">
+                            <p class="project-name">Professional Certification in Java Programming</p> 
+                            <p class="description">
+                                <b>Issued:</b> Mar 2022<br>
+                                <b>Credential ID:</b>UC-7935c29f-7917-48db-a847-662c337dbbf5<br>
+                                <b>Skills:</b> ·Object Oriented Programming ·Java <br>
+                            </p>
+                            <p class="buttons-para"><a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-7935c29f-7917-48db-a847-662c337dbbf5.pdf" class="btn btn-success">View and Verify</a>
+                        </div>  
+                     
+                    </div>
+                       
+                        </div>
+                       
+                    
+                        </div>
+                        
+                        
+                    </section>
+               
+                </section>
+
+                <!-- The achievement section starts from here  -->
+            
+                  <section class="achievement " id="achievement">
+              
+                    <p class="subheading">Achievements</p>
+                  
+                   <div class="skill-div">
+                  
+                        <div class="inner-box project-box" style="width: 60vw;height: fit-content;">
+                            <p class="project-name">First Runner Up-The Return Journey Hackathon-2024</p> 
+                            <p class="description">
+                                <b>Organized: GDSC -IIT Kanpur</b><br>
+                                Led my team, Atithidev, to secure First Runner Up out of nearly 800 teams in the prestigious national hackathon organized by IIT Kanpur.<br>
+                               
+                            </p>
+                                <a href="https://drive.google.com/file/d/15MJaVsG-j6NAkj37fDmZApPpe_VAv16z/view" class="btn btn-success">View Certificate</a></p>    
+                        </div>
+                       
+                    </div>
+                    <div class="skill-div">
+                        <div class="inner-box project-box" style="width: 60vw;height: fit-content;">
+                            <p class="project-name">Subject Matter Expert in Computer Science</p> 
+                        <p class="description">
+                            Got more than 90% Quality Rating <br>
+                          <b>Chegg India Private Limited</b><br>
+                            <b>Skills:</b>·Data Structure and Algorithms ·Database management Systems · Computer Networks<br></p>
+                            <a href="https://drive.google.com/file/d/1aFoUAJqg9VAZz4qJK4sjEowohA04YTKd/view" class="btn btn-success">Work Certificate</a>
+                        </div>
+                        
+                    </div>
+                   
+                   
+            
+                     
+                        
+                        
+                    </section>
+               
+                </section>
+
+
+ 
 </body>
 
 </html>
